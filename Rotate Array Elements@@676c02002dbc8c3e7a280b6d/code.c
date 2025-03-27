@@ -19,19 +19,19 @@ void rotatearray(int arr[], int n, int k) {
 
 int main() {
     int n, k;
-    printf("Enter the size of the array: ");
+    printf(" ");
     scanf("%d", &n);
     int arr[n];
-    printf("Enter the elements of the array:\n");
+    printf("\n");
     for (int i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
     }
-    printf("Enter the rotation count: ");
+    printf(" ");
     scanf("%d", &k);
     rotatearray(arr, n, k);
     printf("Rotated array:\n");
     for (int i = 0; i < n; i++) {
-        printf("%d ", arr[i]);
+        printf("%d/n", arr[i]);
     }
     return 0;
 }
