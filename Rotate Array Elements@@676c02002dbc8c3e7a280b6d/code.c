@@ -13,7 +13,7 @@ int main (){
         k=k%n;
         reverse(arr, 0, n-1);
         reverse(arr,0,k-1);
-        reverse(aerr,k,n-1);
+        reverse(arr,k,n-1);
 
     }
     int main (){
@@ -25,7 +25,7 @@ int main (){
             rotatearray(arr,n,k);
             for (int i =0; i<n ; i++){
                 printf ("%d",arr[i]);
-                
+
             }
          }
     }
