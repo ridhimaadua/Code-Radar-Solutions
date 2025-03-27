@@ -22,7 +22,7 @@ int main() {
     printf(" ");
     scanf("%d", &n);
     int arr[n];
-    printf()
+    printf();
     for (int i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
     }
