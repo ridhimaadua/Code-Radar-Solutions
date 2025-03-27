@@ -29,7 +29,7 @@ int main() {
     printf(" ");
     scanf("%d", &k);
     rotatearray(arr, n, k);
-    printf("Rotated array:\n");
+    printf("\n");
     for (int i = 0; i < n; i++) {
         printf("%d\n", arr[i]);
     }
