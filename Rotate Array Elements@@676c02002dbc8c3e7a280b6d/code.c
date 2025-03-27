@@ -19,7 +19,7 @@ void rotatearray(int arr[], int n, int k) {
 
 int main() {
     int n, k;
-    printf();
+    printf("");
     scanf("%d", &n);
     int arr[n];
     printf();
