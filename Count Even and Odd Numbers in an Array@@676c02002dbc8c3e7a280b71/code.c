@@ -16,8 +16,8 @@
             odd++;
     }
 
-    printf("Even numbers: %d\n", even);
-    printf("Odd numbers: %d\n", odd);
+    printf("%d", even);
+    printf("%d", odd);
      return 0;
 }
 
