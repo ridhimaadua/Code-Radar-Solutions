@@ -3,8 +3,8 @@
   int main() {
     int arr[100], n, even = 0, odd = 0;
 
-    printf("");
-
+    printf(" ");
+    scanf("%d", &n);
 
     printf("%d ", n);
     for (int i = 0; i < n; i++) {
