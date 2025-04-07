@@ -3,7 +3,7 @@
   int main() {
     int arr[100], n, even = 0, odd = 0;
 
-    printf("Enter the number of elements: ");
+    printf("");
     scanf("%d", &n);
 
     printf("%d ", n);
