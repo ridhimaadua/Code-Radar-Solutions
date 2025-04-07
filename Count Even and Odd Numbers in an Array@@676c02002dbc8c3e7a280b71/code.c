@@ -1,22 +1,23 @@
-// Your code here...#include <stdio.h>
-#include <stdio.h>
-int main() {
-    int n,i;
-    scanf("%d",&n);
-    int array[n];
-    for(i=0;i<n;i++){
-        scanf("%d",&array[i]);
+
+  #include <stdio.h>
+  int main() {
+    int arr[100], n, even = 0, odd = 0;
+
+    printf("Enter the number of elements: ");
+    scanf("%d", &n);
+
+    printf("Enter %d elements:\n", n);
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+
+        if (arr[i] % 2 == 0)
+            even++;
+        else
+            odd++;
     }
-    int maximum=array[0];
-    int minimum=array[0];
-    for(i=0;i<n;i++){
-        if(array[i]>maximum){
-            maximum=array[i];
-        }
-        if(array[i]<minimum){
-            minimum=array[i];
-        }
-    }
-    printf("%d ",minimum);
-    printf("%d",maximum);
+
+    printf("Even numbers: %d\n", even);
+    printf("Odd numbers: %d\n", odd);
+     return 0;
 }
+
