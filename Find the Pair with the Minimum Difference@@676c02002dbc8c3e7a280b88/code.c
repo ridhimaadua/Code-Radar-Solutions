@@ -38,10 +38,10 @@ int main() {
     }
 
     int result = findMajorityElement(arr, size);
-    if (result != -1)
+    if (result != -1){
         printf("Majority Element: %d\n", result);
-    else
-        printf("No Majority Element found.\n");
+    }
+    
 
     return 0;
 }
