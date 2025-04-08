@@ -3,7 +3,6 @@
 
 int main() {
     int n;
-    printf(" ");
     scanf("%d", &n);
 
     if (n < 2) {
@@ -12,7 +11,11 @@ int main() {
     }
 
     int arr[1000]; // assuming max size is 1000
-  
+
+    // ✅ Take input for array elements
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+    }
 
     int first = INT_MIN;
     int second = INT_MIN;
@@ -29,7 +32,7 @@ int main() {
     if (second == INT_MIN) {
         printf("-1\n");
     } else {
-        printf("%d", second);
+        printf("%d\n", second);
     }
 
     return 0;
