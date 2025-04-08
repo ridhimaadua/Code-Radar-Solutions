@@ -27,10 +27,23 @@ int findMajorityElement(int arr[], int size) {
 }
 
 int main() {
-    int arr[] = {2, 2, 1, 1, 2, 2, 2};
-    int size = sizeof(arr) / sizeof(arr[0]);
-    int result = findMajorityElement(arr, size);
+    int size;
 
-    printf("%d ", result);
+    printf("Enter the size of the array: ");
+    scanf("%d", &size);
+
+    int arr[size]; // Variable-length array (C99)
+
+    printf("Enter %d elements:\n", size);
+    for (int i = 0; i < size; i++) {
+        scanf("%d", &arr[i]);
+    }
+
+    int result = findMajorityElement(arr, size);
+    if (result != -1)
+        printf("Majority Element: %d\n", result);
+    else
+        printf("No Majority Element found.\n");
+
     return 0;
 }
