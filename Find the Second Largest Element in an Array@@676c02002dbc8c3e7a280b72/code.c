@@ -11,11 +11,7 @@ int main() {
         return 0;
     }
 
-    int arr[1000]; // assuming max size is 1000
-    printf("Enter %d elements:\n", n);
-    for (int i = 0; i < n; i++) {
-        scanf("%d", &arr[i]);
-    }
+   
 
     int first = INT_MIN;
     int second = INT_MIN;
@@ -32,7 +28,7 @@ int main() {
     if (second == INT_MIN) {
         printf("-1\n");
     } else {
-        printf("Second largest element: %d", second);
+        printf(" %d", second);
     }
 
     return 0;
