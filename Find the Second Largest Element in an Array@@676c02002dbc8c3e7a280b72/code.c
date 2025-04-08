@@ -29,7 +29,7 @@ int main() {
     if (second == INT_MIN) {
         printf("-1\n");
     } else {
-        printf("Second largest element: %d", second);
+        printf("%d", second);
     }
 
     return 0;
