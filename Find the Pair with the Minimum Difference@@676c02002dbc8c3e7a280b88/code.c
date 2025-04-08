@@ -1,42 +1,35 @@
-// Your code here...#include <stdio.h>
-#include <stdlib.h>
+#include <stdio.h>
 
-// Comparison function for qsort
-int compare(const void *a, const void *b) {
-    return (*(int*)a - *(int*)b);
-}
+int findMajorityElement(int arr[], int size) {
+    int count = 0, candidate = -1;
 
-int main() {
-    int n;
-   
-    scanf("%d", &n);
-
-    if (n < 2) {
-        printf("-1\n");
-        return 0;
-    }
-
-    int arr[1000];  // Assuming max array size is 1000
-    
-    for (int i = 0; i < n; i++) {
-        scanf("%d", &arr[i]);
-    }
-
-    // Sort the array
-    qsort(arr, n, sizeof(int), compare);
-
-    int minDiff = abs(arr[1] - arr[0]);
-    int pair1 = arr[0], pair2 = arr[1];
-
-    for (int i = 1; i < n - 1; i++) {
-        int diff = abs(arr[i+1] - arr[i]);
-        if (diff < minDiff) {
-            minDiff = diff;
-            pair1 = arr[i];
-            pair2 = arr[i+1];
+    // Phase 1: Find a candidate
+    for (int i = 0; i < size; i++) {
+        if (count == 0) {
+            candidate = arr[i];
+            count = 1;
+        } else if (arr[i] == candidate) {
+            count++;
+        } else {
+            count--;
         }
     }
 
-    // Output in ascending order
-    if (pair1 < pair2)
-        printf("Pair with
+    // Phase 2: Verify the candidate
+    count = 0;
+    for (int i = 0; i < size; i++) {
+        if (arr[i] == candidate) {
+            count++;
+        }
+    }
+
+    return (count > size / 2) ? candidate : -1;
+}
+
+int main() {
+    int arr[] = {2, 2, 1, 1, 2, 2, 2};
+    int size = sizeof(arr) / sizeof(arr[0]);
+    int result = findMajorityElement(arr, size);
+
+    return 0;
+}
