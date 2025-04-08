@@ -49,10 +49,13 @@ int main() {
 
     int result = findMajorityElement(arr, n);
 
-    if (result == -1)
+    if (result == -1){
+        printf ("")
+    }
   
-    else
+    else{
         printf("%d", result);
+    }
 
     return 0;
 }
