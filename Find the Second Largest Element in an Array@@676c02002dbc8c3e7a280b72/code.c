@@ -11,7 +11,8 @@ int main() {
         return 0;
     }
 
-   
+    int arr[1000]; // assuming max size is 1000
+  
 
     int first = INT_MIN;
     int second = INT_MIN;
@@ -28,7 +29,7 @@ int main() {
     if (second == INT_MIN) {
         printf("-1\n");
     } else {
-        printf(" %d", second);
+        printf("Second largest element: %d", second);
     }
 
     return 0;
