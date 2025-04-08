@@ -1,5 +1,5 @@
 // Your code here...#include <stdio.h>
-#include <stdlib.h>
+#include <stdio.h>
 
 // Comparison function for qsort
 int compare(const void *a, const void *b) {
