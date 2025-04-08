@@ -31,5 +31,6 @@ int main() {
     int size = sizeof(arr) / sizeof(arr[0]);
     int result = findMajorityElement(arr, size);
 
+    printf("%d ", result);
     return 0;
 }
