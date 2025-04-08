@@ -32,6 +32,5 @@ int main() {
         printf("-1\n");
     else
         printf("Second largest element: %d\n", second);
-
-    return 0;
+        return 0;
 }
