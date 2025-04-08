@@ -49,9 +49,7 @@ int main() {
 
     int result = findMajorityElement(arr, n);
 
-    if (result == -1)
-     
-    else
+    
         
 
     return 0;
