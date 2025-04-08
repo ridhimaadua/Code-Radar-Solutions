@@ -3,7 +3,7 @@
 
 int main() {
     int n;
-    printf("Enter the number of elements: ");
+    printf(" ");
     scanf("%d", &n);
 
     if (n < 2) {
@@ -29,7 +29,7 @@ int main() {
     if (second == INT_MIN) {
         printf("-1\n");
     } else {
-        printf("%d", second);
+        printf("%d", &second);
     }
 
     return 0;
