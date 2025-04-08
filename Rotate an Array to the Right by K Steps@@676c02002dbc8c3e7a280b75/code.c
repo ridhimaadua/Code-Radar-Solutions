@@ -11,7 +11,7 @@ void reverse(int arr[], int start, int end) {
 
 int main() {
     int n, k;
-    printf("Enter the number of elements: ");
+   
     scanf("%d", &n);
 
     int arr[1000]; // max array size
@@ -20,7 +20,7 @@ int main() {
         scanf("%d", &arr[i]);
     }
 
-    printf("Enter K (number of steps to rotate): ");
+  
     scanf("%d", &k);
 
     // Handle cases where k > n
