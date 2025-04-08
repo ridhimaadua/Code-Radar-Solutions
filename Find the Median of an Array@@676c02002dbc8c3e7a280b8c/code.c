@@ -32,7 +32,7 @@ int findMajorityElement(int arr[], int n) {
 int main() {
     int n;
 
-    printf("Enter the size of the array: ");
+ 
     scanf("%d", &n);
 
     if (n <= 0) {
@@ -50,9 +50,9 @@ int main() {
     int result = findMajorityElement(arr, n);
 
     if (result == -1)
-        printf("No Majority Element found.\n");
+     
     else
-        printf("Majority Element: %d\n", result);
+        
 
     return 0;
 }
