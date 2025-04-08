@@ -15,7 +15,7 @@ int main() {
     scanf("%d", &n);
 
     int arr[1000]; // max array size
-    printf("Enter %d elements:\n", n);
+
     for (int i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
     }
@@ -33,7 +33,7 @@ int main() {
     // Step 3: Reverse the rest
     reverse(arr, k, n - 1);
 
-    printf("Array after rotation:\n");
+    
     for (int i = 0; i < n; i++) {
         printf("%d ", arr[i]);
     }
