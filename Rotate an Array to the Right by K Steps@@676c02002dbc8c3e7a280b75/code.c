@@ -1,6 +1,4 @@
-// Your code here...#include <stdio.h>
 
-// Function to reverse a portion of the array
 void reverse(int arr[], int start, int end) {
     while (start < end) {
         int temp = arr[start];
@@ -40,6 +38,5 @@ int main() {
         printf("%d ", arr[i]);
     }
     printf("\n");
-
     return 0;
 }
