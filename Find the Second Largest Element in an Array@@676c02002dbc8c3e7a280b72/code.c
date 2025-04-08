@@ -1,4 +1,4 @@
-// Your code here...#include <stdio.h>
+#include <stdio.h>
 #include <limits.h>
 
 int main() {
@@ -11,13 +11,14 @@ int main() {
         return 0;
     }
 
-    int arr[n];
+    int arr[1000]; // assuming max size is 1000
     printf("Enter %d elements:\n", n);
     for (int i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
     }
 
-    int first = INT_MIN, second = INT_MIN;
+    int first = INT_MIN;
+    int second = INT_MIN;
 
     for (int i = 0; i < n; i++) {
         if (arr[i] > first) {
@@ -28,9 +29,11 @@ int main() {
         }
     }
 
-    if (second == INT_MIN)
+    if (second == INT_MIN) {
         printf("-1\n");
-    else
+    } else {
         printf("Second largest element: %d\n", second);
-        return 0;
+    }
+
+    return 0;
 }
