@@ -32,30 +32,16 @@ int findMajorityElement(int arr[], int n) {
 int main() {
     int n;
 
-    
+    // Take input size
     scanf("%d", &n);
 
     if (n <= 0) {
-   
         return 1;
     }
 
-    int arr[n];  // Variable length array
+    int arr[n];
 
-    printf("%d", n);
+    // Input array elements
     for (int i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
     }
-
-    int result = findMajorityElement(arr, n);
-
-    if (result == -1){
-        printf ("")
-    }
-  
-    else{
-        printf("%d", result);
-    }
-
-    return 0;
-}
