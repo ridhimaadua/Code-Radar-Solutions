@@ -3,7 +3,6 @@
 int findMajorityElement(int arr[], int size) {
     int count = 0, candidate = -1;
 
-    // Phase 1: Find a candidate
     for (int i = 0; i < size; i++) {
         if (count == 0) {
             candidate = arr[i];
@@ -15,7 +14,7 @@ int findMajorityElement(int arr[], int size) {
         }
     }
 
-    // Phase 2: Verify the candidate
+   
     count = 0;
     for (int i = 0; i < size; i++) {
         if (arr[i] == candidate) {
@@ -29,12 +28,11 @@ int findMajorityElement(int arr[], int size) {
 int main() {
     int size;
 
-    printf("Enter the size of the array: ");
+   
     scanf("%d", &size);
 
-    int arr[size]; // Variable-length array (C99)
+    int arr[size]; 
 
-    printf("Enter %d elements:\n", size);
     for (int i = 0; i < size; i++) {
         scanf("%d", &arr[i]);
     }
