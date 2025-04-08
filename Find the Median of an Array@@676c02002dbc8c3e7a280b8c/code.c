@@ -34,6 +34,5 @@ int main() {
 
     float median = findMedian(arr, n);
     printf("Median: %.2f\n", median);
-
     return 0;
 }
